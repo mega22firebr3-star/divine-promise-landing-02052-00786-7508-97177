@@ -33,13 +33,15 @@ const FinalCTASection = () => {
           </div>
         </div>
         
-        <Button
-          onClick={handleCTAClick}
-          className="w-full md:w-auto text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl px-4 md:px-16 lg:px-20 py-4 md:py-10 lg:py-12 rounded-2xl font-bold bg-gradient-sacred text-white border-4 border-white shadow-2xl hover:scale-105 hover:shadow-divine transition-all duration-300 divine-pulse text-center break-words leading-tight min-h-[80px] md:min-h-[100px] flex items-center justify-center"
-          style={{ wordWrap: 'break-word', whiteSpace: 'normal' }}
-        >
-          👉 Liberarme del dolor — Descargar ahora
-        </Button>
+        <div className="flex justify-center">
+          <Button
+            onClick={handleCTAClick}
+            className="w-full md:w-auto text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl px-4 md:px-16 lg:px-20 py-4 md:py-10 lg:py-12 rounded-2xl font-bold bg-gradient-sacred text-white border-4 border-white shadow-2xl hover:scale-105 hover:shadow-divine transition-all duration-300 divine-pulse text-center break-words leading-tight min-h-[80px] md:min-h-[100px] flex items-center justify-center"
+            style={{ wordWrap: 'break-word', whiteSpace: 'normal' }}
+          >
+            💝 Mi última oportunidad de recibir estas promesas
+          </Button>
+        </div>
 
         <style>{`
           @keyframes infinite-pulse {

@@ -3,7 +3,7 @@ import bibleIlluminated from "@/assets/bible-illuminated.jpg";
 
 const AuthoritySection = () => {
   return (
-    <section className="py-12 md:py-20 px-4 bg-gradient-heaven scroll-reveal">
+    <section className="py-12 md:py-20 px-4 bg-gradient-gentle scroll-reveal">
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Image Column */}
@@ -14,13 +14,13 @@ const AuthoritySection = () => {
                 alt="Biblia abierta iluminada por luz divina" 
                 className="w-full h-auto object-cover"
               />
-              <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 border-2 border-golden/30">
-                <div className="flex items-center gap-3">
-                  <Shield className="w-6 h-6 text-golden flex-shrink-0" />
-                  <p className="text-sm md:text-base font-bold text-primary">
-                    Basado en la Palabra de Dios
-                  </p>
-                </div>
+            </div>
+            <div className="mt-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 border-2 border-golden/30 shadow-divine">
+              <div className="flex items-center gap-3">
+                <Shield className="w-6 h-6 text-golden flex-shrink-0" />
+                <p className="text-sm md:text-base font-bold text-primary">
+                  Basado en la Palabra de Dios
+                </p>
               </div>
             </div>
           </div>

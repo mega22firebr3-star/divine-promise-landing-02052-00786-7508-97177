@@ -22,11 +22,11 @@ const HeroSection = () => {
           <img 
             src={jesusImage} 
             alt="Jesús con brazos abiertos en luz celestial" 
-            className="w-full h-full object-contain opacity-50"
+            className="w-full h-full object-cover opacity-50"
             style={{ mixBlendMode: 'overlay' }}
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background"></div>
+        <div className="absolute inset-0 bg-gradient-mobile-hero md:bg-gradient-to-b md:from-background/80 md:via-background/60 md:to-background"></div>
       </div>
 
       <div className="container relative z-10 mx-auto px-4 py-8 md:py-20 flex items-center" style={{ minHeight: '100vh' }}>
@@ -70,7 +70,7 @@ const HeroSection = () => {
                 className="w-full px-8 md:px-16 lg:px-20 py-6 md:py-10 lg:py-12 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl rounded-2xl font-bold bg-gradient-sacred text-white border-0 shadow-sacred hover-sacred divine-pulse transition-all duration-300 hover:shadow-divine hover:scale-105 text-center break-words leading-tight min-h-[80px] md:min-h-[100px] flex items-center justify-center"
                 style={{ wordWrap: 'break-word', whiteSpace: 'normal' }}
               >
-                👉 No quiero seguir sufriendo — Quiero recibir las promesas ahora
+                🙏 Sí, necesito encontrar la paz que tanto busco
               </Button>
             </div>
           </div>

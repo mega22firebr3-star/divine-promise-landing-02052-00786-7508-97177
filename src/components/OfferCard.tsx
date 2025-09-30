@@ -7,9 +7,23 @@ const OfferCard = () => {
   };
 
   return (
-    <section className="py-12 md:py-20 px-4 scroll-reveal" style={{ background: 'hsl(210 40% 96%)' }}>
+    <section className="py-12 md:py-20 px-4 scroll-reveal relative" style={{ background: 'linear-gradient(135deg, hsl(210 40% 98%), hsl(210 25% 95%))' }}>
+      {/* Background Elements for Desktop */}
+      <div className="hidden md:block absolute left-4 top-1/2 -translate-y-1/2 opacity-10">
+        <div className="text-6xl">✨</div>
+      </div>
+      <div className="hidden md:block absolute right-4 top-1/3 opacity-10">
+        <div className="text-4xl">🙏</div>
+      </div>
+      <div className="hidden md:block absolute left-8 bottom-1/4 opacity-10">
+        <div className="text-5xl">✝️</div>
+      </div>
+      <div className="hidden md:block absolute right-8 bottom-1/3 opacity-10">
+        <div className="text-3xl">💫</div>
+      </div>
+      
       <div className="container mx-auto max-w-6xl">
-        <div className="w-full md:w-1/2 mx-auto">
+        <div className="w-full md:w-3/5 mx-auto">
           <div 
             className="rounded-3xl shadow-2xl p-6 md:p-10 lg:p-12 border-4 animate-fade-in"
             style={{ borderColor: '#DAA520', background: 'hsl(45 80% 97%)' }}
@@ -90,7 +104,7 @@ const OfferCard = () => {
                 minHeight: '80px'
               }}
             >
-              👉 Sí, quiero experimentar la paz de Dios hoy
+              🔥 Tomar mi decisión AHORA y transformar mi vida
             </Button>
           </div>
         </div>

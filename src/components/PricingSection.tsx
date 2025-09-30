@@ -2,7 +2,7 @@ import { Sparkles } from "lucide-react";
 
 const PricingSection = () => {
   return (
-    <section className="py-12 md:py-20 px-4 bg-gradient-heaven scroll-reveal">
+    <section className="py-12 md:py-20 px-4 bg-gradient-gentle scroll-reveal">
       <div className="container mx-auto max-w-4xl text-center">
         <Sparkles className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6" style={{ color: '#DAA520' }} />
         

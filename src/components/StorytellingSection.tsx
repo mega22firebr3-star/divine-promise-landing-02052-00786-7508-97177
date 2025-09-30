@@ -2,7 +2,7 @@ import { Quote } from "lucide-react";
 
 const StorytellingSection = () => {
   return (
-    <section className="py-12 md:py-20 px-4 bg-gradient-heaven scroll-reveal">
+    <section className="py-12 md:py-20 px-4 bg-gradient-gentle scroll-reveal">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center">
           <Quote className="w-12 h-12 md:w-16 md:h-16 text-golden mx-auto mb-6 md:mb-8" />
@@ -20,8 +20,8 @@ const StorytellingSection = () => {
             <p className="text-muted-foreground">
               Hoy duerme tranquila, sonríe de nuevo y dice:
             </p>
-            <blockquote className="text-xl md:text-2xl lg:text-3xl font-bold text-gradient-divine italic border-l-4 border-golden pl-4 md:pl-6 py-4 mt-6">
-              Volví a sentir la mano de Dios en mi vida
+            <blockquote className="text-xl md:text-2xl lg:text-3xl font-bold text-gradient-divine italic py-4 mt-6">
+              <span className="underline decoration-golden decoration-2 underline-offset-4">Volví a sentir la mano de Dios en mi vida</span>
             </blockquote>
           </div>
         </div>

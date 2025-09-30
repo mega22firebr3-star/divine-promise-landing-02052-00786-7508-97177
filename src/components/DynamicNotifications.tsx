@@ -4,52 +4,57 @@ import { X } from "lucide-react";
 const DynamicNotifications = () => {
   const [showUrgency, setShowUrgency] = useState(false);
   const [showSocialProof, setShowSocialProof] = useState(false);
-  const [purchaseCount, setPurchaseCount] = useState(127);
+  const [purchaseCount, setPurchaseCount] = useState(124);
   const [urgencyClosed, setUrgencyClosed] = useState(false);
   const [socialProofClosed, setSocialProofClosed] = useState(false);
 
   useEffect(() => {
-    // Show urgency notification after 3 seconds
+    // Show urgency notification after 5 seconds
     const urgencyTimer = setTimeout(() => {
       if (!urgencyClosed) {
         setShowUrgency(true);
-        // Auto-hide after 5 seconds
-        setTimeout(() => setShowUrgency(false), 5000);
+        // Auto-hide after 8 seconds
+        setTimeout(() => setShowUrgency(false), 8000);
       }
-    }, 3000);
+    }, 5000);
 
-    // Show social proof notification after 8 seconds
+    // Show social proof notification after 12 seconds
     const socialProofTimer = setTimeout(() => {
       if (!socialProofClosed) {
         setShowSocialProof(true);
-        // Auto-hide after 5 seconds
-        setTimeout(() => setShowSocialProof(false), 5000);
+        // Auto-hide after 8 seconds
+        setTimeout(() => setShowSocialProof(false), 8000);
       }
-    }, 8000);
+    }, 12000);
 
-    // Update purchase count every 15 seconds
-    const countInterval = setInterval(() => {
-      setPurchaseCount(prev => prev + Math.floor(Math.random() * 3) + 1);
-    }, 15000);
+    // Update purchase count: +1 every 1 minute, +2 every 2.5 minutes
+    const countInterval1min = setInterval(() => {
+      setPurchaseCount(prev => prev + 1);
+    }, 60000); // 1 minute
 
-    // Re-show notifications periodically
+    const countInterval2_5min = setInterval(() => {
+      setPurchaseCount(prev => prev + 2);
+    }, 150000); // 2.5 minutes
+
+    // Re-show notifications periodically (slower)
     const reshowInterval = setInterval(() => {
       if (!urgencyClosed) {
         setShowUrgency(true);
-        setTimeout(() => setShowUrgency(false), 5000);
+        setTimeout(() => setShowUrgency(false), 8000);
       }
       setTimeout(() => {
         if (!socialProofClosed) {
           setShowSocialProof(true);
-          setTimeout(() => setShowSocialProof(false), 5000);
+          setTimeout(() => setShowSocialProof(false), 8000);
         }
-      }, 5000);
-    }, 30000);
+      }, 8000);
+    }, 45000);
 
     return () => {
       clearTimeout(urgencyTimer);
       clearTimeout(socialProofTimer);
-      clearInterval(countInterval);
+      clearInterval(countInterval1min);
+      clearInterval(countInterval2_5min);
       clearInterval(reshowInterval);
     };
   }, [urgencyClosed, socialProofClosed]);
@@ -92,7 +97,7 @@ const DynamicNotifications = () => {
             <div className="flex items-center gap-3">
               <span className="text-lg animate-pulse flex-shrink-0">✨</span>
               <span className="font-semibold text-sm flex-1">
-                {purchaseCount} personas descargaron este ebook en las últimas 24 horas.
+                {purchaseCount} personas compraron este ebook en las últimas 24 horas.
               </span>
               <button 
                 onClick={handleCloseSocialProof}
