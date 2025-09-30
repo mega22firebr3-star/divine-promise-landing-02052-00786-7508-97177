@@ -10,7 +10,11 @@ const PricingSection = () => {
           Acceso inmediato por un precio simbólico
         </h2>
         
-        <div className="bg-white rounded-3xl shadow-2xl p-6 md:p-10 lg:p-12 border-4 transform hover:scale-105 transition-all duration-300 mx-2" style={{ borderColor: '#DAA520' }}>
+        <div 
+          className="bg-white rounded-3xl shadow-2xl p-6 md:p-10 lg:p-12 border-4 transform hover:scale-105 transition-all duration-300 mx-2 cursor-pointer" 
+          style={{ borderColor: '#DAA520' }}
+          onClick={() => window.open('https://pay.kiwify.com.br/RR9iB5b', '_blank')}
+        >
           <div className="mb-6 md:mb-8">
             <div className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-3 md:mb-4" style={{ color: '#B22222' }}>
               10x R$ 0,59

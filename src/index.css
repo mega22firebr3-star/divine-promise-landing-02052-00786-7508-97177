@@ -299,3 +299,16 @@ All colors MUST be HSL.
   background: transparent !important;
   object-fit: contain;
 }
+
+/* Mobile specific styles for Jesus image transparency */
+@media (max-width: 768px) {
+  :root {
+    --jesus-opacity: 0.35;
+  }
+}
+
+@media (min-width: 769px) {
+  :root {
+    --jesus-opacity: 0.5;
+  }
+}

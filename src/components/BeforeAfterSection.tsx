@@ -2,7 +2,7 @@ import { X, Check, ArrowRight } from "lucide-react";
 
 const BeforeAfterSection = () => {
   return (
-    <section className="py-12 md:py-20 px-4 bg-card scroll-reveal">
+    <section className="py-8 md:py-20 px-4 bg-card scroll-reveal">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-primary mb-8 md:mb-12">
           El cambio que experimentarás

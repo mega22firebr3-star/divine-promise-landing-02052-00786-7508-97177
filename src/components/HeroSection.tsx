@@ -22,8 +22,8 @@ const HeroSection = () => {
           <img 
             src={jesusImage} 
             alt="Jesús con brazos abiertos en luz celestial" 
-            className="w-full h-full object-cover opacity-50"
-            style={{ mixBlendMode: 'overlay' }}
+            className="w-full h-full object-cover opacity-50 md:opacity-50"
+            style={{ mixBlendMode: 'overlay', opacity: 'var(--jesus-opacity, 0.35)' }}
           />
         </div>
         <div className="absolute inset-0 bg-gradient-mobile-hero md:bg-gradient-to-b md:from-background/80 md:via-background/60 md:to-background"></div>
@@ -33,10 +33,10 @@ const HeroSection = () => {
         <div className="max-w-7xl mx-auto w-full">
           <div className="flex flex-col items-center text-center space-y-8 md:space-y-10 lg:space-y-12">
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight fade-up break-words max-w-6xl" style={{ wordWrap: 'break-word', whiteSpace: 'normal', lineHeight: '1.2' }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight fade-up break-words max-w-5xl" style={{ wordWrap: 'break-word', whiteSpace: 'normal', lineHeight: '1.2' }}>
               <span className="text-primary">¿Tu vida se siente vacía y sin paz?</span>
               <span className="block text-golden mt-2 font-black">Descubre las 12 promesas eternas</span>
-              <span className="block text-primary text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-4 md:mt-6 leading-relaxed">
+              <span className="block text-primary text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mt-4 md:mt-6 leading-relaxed">
                 que pueden devolverte esperanza 
                 <span className="text-sacred font-black"> HOY.</span>
               </span>

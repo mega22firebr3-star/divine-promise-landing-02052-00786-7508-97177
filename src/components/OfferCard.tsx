@@ -8,18 +8,24 @@ const OfferCard = () => {
 
   return (
     <section className="py-12 md:py-20 px-4 scroll-reveal relative" style={{ background: 'linear-gradient(135deg, hsl(210 40% 98%), hsl(210 25% 95%))' }}>
-      {/* Background Elements for Desktop */}
-      <div className="hidden md:block absolute left-4 top-1/2 -translate-y-1/2 opacity-10">
-        <div className="text-6xl">✨</div>
+      {/* Enhanced Background Elements for Desktop */}
+      <div className="hidden md:block absolute left-2 top-1/4 opacity-20">
+        <div className="text-8xl animate-pulse text-golden">✨</div>
       </div>
-      <div className="hidden md:block absolute right-4 top-1/3 opacity-10">
-        <div className="text-4xl">🙏</div>
+      <div className="hidden md:block absolute right-2 top-1/6 opacity-25">
+        <div className="text-6xl text-primary animate-bounce">🙏</div>
       </div>
-      <div className="hidden md:block absolute left-8 bottom-1/4 opacity-10">
-        <div className="text-5xl">✝️</div>
+      <div className="hidden md:block absolute left-4 bottom-1/6 opacity-20">
+        <div className="text-7xl text-sacred animate-pulse">✝️</div>
       </div>
-      <div className="hidden md:block absolute right-8 bottom-1/3 opacity-10">
-        <div className="text-3xl">💫</div>
+      <div className="hidden md:block absolute right-4 bottom-1/4 opacity-25">
+        <div className="text-5xl text-golden animate-bounce">💫</div>
+      </div>
+      <div className="hidden md:block absolute left-1/4 top-1/8 opacity-15">
+        <div className="text-4xl text-primary">🕊️</div>
+      </div>
+      <div className="hidden md:block absolute right-1/4 bottom-1/8 opacity-15">
+        <div className="text-4xl text-sacred">💝</div>
       </div>
       
       <div className="container mx-auto max-w-6xl">
