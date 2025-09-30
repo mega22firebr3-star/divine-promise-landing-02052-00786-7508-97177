@@ -1,0 +1,291 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Divine Color Palette */
+    --background: 0 0% 98%;
+    --foreground: 210 100% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 100% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 100% 15%;
+
+    /* Biblical Blues - Deep authority #0A2540 */
+    --primary: 210 73% 15%;
+    --primary-foreground: 0 0% 98%;
+
+    /* Golden Divine */
+    --golden: 43 85% 49%;
+    --golden-foreground: 210 100% 15%;
+
+    /* Sacred Fire Red */
+    --sacred: 0 67% 42%;
+    --sacred-foreground: 0 0% 98%;
+
+    --secondary: 210 25% 95%;
+    --secondary-foreground: 210 100% 15%;
+
+    --muted: 210 25% 96%;
+    --muted-foreground: 210 15% 45%;
+
+    --accent: 43 85% 49%;
+    --accent-foreground: 210 100% 15%;
+
+    --destructive: 0 67% 42%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 25% 90%;
+    --input: 210 25% 90%;
+    --ring: 43 85% 49%;
+
+    /* Divine Gradients */
+    --gradient-divine: linear-gradient(135deg, hsl(43 85% 49%), hsl(45 90% 60%));
+    --gradient-sacred: linear-gradient(135deg, hsl(0 67% 42%), hsl(15 75% 50%));
+    --gradient-heaven: linear-gradient(180deg, hsl(210 40% 98%), hsl(210 25% 95%));
+    
+    /* Divine Shadows */
+    --shadow-divine: 0 20px 40px -10px hsl(43 85% 49% / 0.4);
+    --shadow-sacred: 0 20px 40px -10px hsl(0 67% 42% / 0.3);
+    --shadow-soft: 0 10px 30px -5px hsl(210 100% 15% / 0.1);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  /* Divine Animation Classes */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fade-up 0.8s ease-out forwards;
+  }
+
+  .fade-in-delay {
+    opacity: 0;
+    animation: fade-in 0.8s ease-out 0.3s forwards;
+  }
+
+  .animate-zoom-in {
+    animation: mockup-zoom 1.2s ease-out forwards;
+  }
+
+  .zoom-in-slow {
+    transform: scale(1.05);
+    animation: zoom-in 2s ease-out forwards;
+  }
+
+  .divine-pulse {
+    animation: divine-pulse 2s ease-in-out infinite;
+  }
+
+  .slide-in-bottom-right {
+    animation: slide-in-bottom-right 0.5s ease-out forwards;
+  }
+
+  .slide-out-bottom-right {
+    animation: slide-out-bottom-right 0.5s ease-out forwards;
+  }
+
+  .hover-divine {
+    transition: all 0.3s ease;
+  }
+
+  .hover-divine:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: var(--shadow-divine);
+  }
+
+  .hover-sacred {
+    transition: all 0.3s ease;
+  }
+
+  .hover-sacred:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: var(--shadow-sacred);
+  }
+
+  /* Scroll reveal animation */
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+  }
+
+  .scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .bg-gradient-divine {
+    background: var(--gradient-divine);
+  }
+
+  .bg-gradient-sacred {
+    background: var(--gradient-sacred);
+  }
+
+  .bg-gradient-heaven {
+    background: var(--gradient-heaven);
+  }
+
+  .text-gradient-divine {
+    background: var(--gradient-divine);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .shadow-divine {
+    box-shadow: var(--shadow-divine);
+  }
+
+  .shadow-sacred {
+    box-shadow: var(--shadow-sacred);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+}
+
+/* Divine Keyframes */
+@keyframes fade-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-in {
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes divine-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 hsl(var(--golden) / 0.6);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 0 20px hsl(var(--golden) / 0);
+  }
+}
+
+@keyframes mockup-zoom {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-in-bottom-right {
+  from {
+    opacity: 0;
+    transform: translate(100%, 100%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes slide-out-bottom-right {
+  from {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(100%, 100%);
+  }
+}
+
+/* Transparent background utility */
+.mockup-transparent {
+  background: transparent !important;
+  object-fit: contain;
+}
