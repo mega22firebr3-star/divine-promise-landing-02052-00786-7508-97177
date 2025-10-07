@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "¿Tu vida se siente vacía y sin paz?",
+    "subtitle": "Descubre las 12 promesas eternas",
+    "text": "que pueden devolverte esperanza HOY.",
+    "backgroundImage": "/assets/divine-light-hero.jpg",
+    "jesusImage": "/assets/jesus-celestial.jpg",
+    "ebookMockup": "/assets/ebook-mockup.webp",
+    "description": "No son frases vacías. Son verdades vivas que ya devolvieron esperanza a miles de creyentes. Hoy pueden devolvértela a ti.",
+    "buttonText": "🙏 Sí, necesito encontrar la paz que tanto busco",
+    "buttonLink": "https://pay.kiwify.com.br/RR9iB5b"
+  },
+  "storytelling": {
+    "paragraph1": "María pasaba noches enteras sin dormir.",
+    "paragraph2": "El corazón acelerado, la mente llena de miedo, preguntándose si Dios la había olvidado.",
+    "paragraph3": "Hasta que encontró estas promesas.",
+    "paragraph4": "Hoy duerme tranquila, sonríe de nuevo y dice:",
+    "quote": "Volví a sentir la mano de Dios en mi vida"
+  },
+  "benefits": {
+    "title": "Al descargar estas promesas hoy mismo podrás:",
+    "buttonText": "👉 No quiero seguir sufriendo — Quiero recibir las promesas ahora",
+    "list": [
+      {
+        "icon": "Heart",
+        "text": "Dormir con paz y confianza"
+      },
+      {
+        "icon": "Shield",
+        "text": "Sentir la protección de Dios en cada paso"
+      },
+      {
+        "icon": "Star",
+        "text": "Llenar tu corazón de esperanza en medio de la tormenta"
+      },
+      {
+        "icon": "Crown",
+        "text": "Recuperar la fe que creías perdida"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Lo que dicen quienes ya recibieron las promesas",
+    "buttonText": "✨ Quiero vivir estas promesas y encontrar mi paz",
+    "list": [
+      {
+        "name": "Roberto J.",
+        "age": "52 años",
+        "text": "Estas promesas me dieron la fuerza para seguir adelante cuando todo parecía perdido.",
+        "image": "/assets/testimonial-sofia.jpg"
+      },
+      {
+        "name": "Juan C.",
+        "age": "38 años",
+        "text": "Mi vida cambió completamente, ahora tengo paz en medio de las tormentas.",
+        "image": "/assets/testimonial-juan.jpg"
+      },
+      {
+        "name": "Elena M.",
+        "age": "55 años",
+        "text": "Encontré consuelo cuando más lo necesitaba. Estas promesas son un regalo del cielo.",
+        "image": "/assets/testimonial-elena.jpg"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Acceso inmediato por un precio simbólico",
+    "installmentPrice": "10x R$ 0,59",
+    "fullPrice": "Ou R$ 5,90 à vista",
+    "priceDescription": "Menos que un café… por la paz eterna de tu corazón.",
+    "paymentLink": "https://pay.kiwify.com.br/RR9iB5b"
+  }
+}

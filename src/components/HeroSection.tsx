@@ -9,7 +9,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen md:min-h-screen flex items-center bg-card overflow-hidden" style={{ minHeight: '100vh' }}>
+    <section data-cms-id="hero-section" className="relative min-h-screen md:min-h-screen flex items-center bg-card overflow-hidden" style={{ minHeight: '100vh' }}>
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -33,10 +33,10 @@ const HeroSection = () => {
         <div className="max-w-7xl mx-auto w-full">
           <div className="flex flex-col items-center text-center space-y-8 md:space-y-10 lg:space-y-12">
             {/* Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight fade-up break-words max-w-5xl" style={{ wordWrap: 'break-word', whiteSpace: 'normal', lineHeight: '1.2' }}>
-              <span className="text-primary">¿Tu vida se siente vacía y sin paz?</span>
-              <span className="block text-golden mt-2 font-black">Descubre las 12 promesas eternas</span>
-              <span className="block text-primary text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mt-4 md:mt-6 leading-relaxed">
+            <h1 data-cms-id="hero-title" className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight fade-up break-words max-w-5xl" style={{ wordWrap: 'break-word', whiteSpace: 'normal', lineHeight: '1.2' }}>
+              <span data-cms-id="hero-title-main" className="text-primary">¿Tu vida se siente vacía y sin paz?</span>
+              <span data-cms-id="hero-subtitle" className="block text-golden mt-2 font-black">Descubre las 12 promesas eternas</span>
+              <span data-cms-id="hero-text" className="block text-primary text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mt-4 md:mt-6 leading-relaxed">
                 que pueden devolverte esperanza 
                 <span className="text-sacred font-black"> HOY.</span>
               </span>
@@ -44,7 +44,8 @@ const HeroSection = () => {
 
             {/* Mockup Image - Large and Centered */}
             <div className="w-full max-w-2xl lg:max-w-3xl xl:max-w-4xl fade-in-delay">
-              <img 
+              <img
+                data-cms-id="hero-ebook-mockup" 
                 src={ebookMockup} 
                 alt="Mockup del ebook Las 12 Promesas Eternas de Dios en múltiples dispositivos" 
                 className="w-full rounded-2xl shadow-2xl animate-zoom-in"
@@ -57,7 +58,7 @@ const HeroSection = () => {
             </div>
             
             {/* Subheadline */}
-            <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-muted-foreground leading-relaxed fade-in-delay max-w-4xl break-words" style={{ wordWrap: 'break-word', whiteSpace: 'normal', lineHeight: '1.4' }}>
+            <p data-cms-id="hero-description" className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-muted-foreground leading-relaxed fade-in-delay max-w-4xl break-words" style={{ wordWrap: 'break-word', whiteSpace: 'normal', lineHeight: '1.4' }}>
               No son frases vacías. Son verdades vivas que ya devolvieron esperanza a 
               <span className="text-primary font-semibold"> miles de creyentes</span>. 
               Hoy pueden devolvértela a ti.
@@ -65,7 +66,8 @@ const HeroSection = () => {
 
             {/* CTA Button - Large, Centered and Prominent */}
             <div className="pt-4 md:pt-8 fade-in-delay w-full max-w-4xl">
-              <Button 
+              <Button
+                data-cms-id="hero-button"
                 onClick={handleCTAClick}
                 className="w-full px-8 md:px-16 lg:px-20 py-6 md:py-10 lg:py-12 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl rounded-2xl font-bold bg-gradient-sacred text-white border-0 shadow-sacred hover-sacred divine-pulse transition-all duration-300 hover:shadow-divine hover:scale-105 text-center break-words leading-tight min-h-[80px] md:min-h-[100px] flex items-center justify-center"
                 style={{ wordWrap: 'break-word', whiteSpace: 'normal' }}

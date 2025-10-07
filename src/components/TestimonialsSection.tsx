@@ -34,10 +34,10 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-12 md:py-20 px-4 bg-primary scroll-reveal">
+    <section data-cms-id="testimonials-section" className="py-12 md:py-20 px-4 bg-primary scroll-reveal">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-golden mb-6 md:mb-8 px-2">
+          <h2 data-cms-id="testimonials-title" className="text-3xl md:text-4xl lg:text-5xl font-bold text-golden mb-6 md:mb-8 px-2">
             Lo que dicen quienes ya recibieron las promesas
           </h2>
         </div>
@@ -45,8 +45,9 @@ const TestimonialsSection = () => {
         {/* Single Row - 3 testimonials */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mb-8 md:mb-12">
           {testimonials.map((testimonial, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
+              data-cms-id={`testimonial-${index}`}
               className="bg-card p-6 md:p-8 rounded-2xl shadow-soft border-2 border-golden/30 hover:border-golden hover:shadow-divine transition-all duration-500 scroll-reveal"
               style={{ animationDelay: `${index * 200}ms` }}
             >
@@ -77,6 +78,7 @@ const TestimonialsSection = () => {
 
         <div className="text-center px-4">
           <button
+            data-cms-id="testimonials-button"
             onClick={handleCTAClick}
             className="w-full sm:w-auto px-8 md:px-12 py-6 md:py-8 text-lg md:text-xl rounded-2xl font-bold shadow-sacred hover-sacred divine-pulse transition-all duration-300 hover:scale-105"
             style={{

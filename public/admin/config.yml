@@ -1,0 +1,76 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/assets"
+public_folder: "/assets"
+
+collections:
+  - name: "pages"
+    label: "Páginas"
+    files:
+      - name: "home"
+        label: "Página Inicial"
+        file: "src/content/home.json"
+        fields:
+          - label: "Seção Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Título Principal", name: "title", widget: "string" }
+              - { label: "Subtítulo Dourado", name: "subtitle", widget: "string" }
+              - { label: "Texto Final", name: "text", widget: "string" }
+              - { label: "Imagem de Fundo", name: "backgroundImage", widget: "image" }
+              - { label: "Imagem Jesus", name: "jesusImage", widget: "image" }
+              - { label: "Mockup E-book", name: "ebookMockup", widget: "image" }
+              - { label: "Descrição", name: "description", widget: "text" }
+              - { label: "Texto do Botão", name: "buttonText", widget: "string" }
+              - { label: "Link do Botão", name: "buttonLink", widget: "string" }
+
+          - label: "Seção Storytelling"
+            name: "storytelling"
+            widget: "object"
+            fields:
+              - { label: "Parágrafo 1", name: "paragraph1", widget: "string" }
+              - { label: "Parágrafo 2", name: "paragraph2", widget: "text" }
+              - { label: "Parágrafo 3", name: "paragraph3", widget: "string" }
+              - { label: "Parágrafo 4", name: "paragraph4", widget: "text" }
+              - { label: "Citação", name: "quote", widget: "string" }
+
+          - label: "Seção Benefícios"
+            name: "benefits"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto do Botão", name: "buttonText", widget: "string" }
+              - label: "Lista de Benefícios"
+                name: "list"
+                widget: "list"
+                fields:
+                  - { label: "Ícone", name: "icon", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "string" }
+
+          - label: "Seção Testemunhos"
+            name: "testimonials"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto do Botão", name: "buttonText", widget: "string" }
+              - label: "Lista de Testemunhos"
+                name: "list"
+                widget: "list"
+                fields:
+                  - { label: "Nome", name: "name", widget: "string" }
+                  - { label: "Idade", name: "age", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+                  - { label: "Foto", name: "image", widget: "image" }
+
+          - label: "Seção Preços"
+            name: "pricing"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Preço Parcelado", name: "installmentPrice", widget: "string" }
+              - { label: "Preço à Vista", name: "fullPrice", widget: "string" }
+              - { label: "Descrição do Preço", name: "priceDescription", widget: "string" }
+              - { label: "Link de Pagamento", name: "paymentLink", widget: "string" }
